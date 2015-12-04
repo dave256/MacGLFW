@@ -70,7 +70,7 @@ int main(int argc, const char * argv[]) {
     // output some information about OpenGL version
     int major, minor, rev;
     glfwGetVersion(&major, &minor, &rev);
-    fprintf(stderr, "OpenGL version recieved: %d.%d.%d\n", major, minor, rev);
+    fprintf(stderr, "OpenGL version received: %d.%d.%d\n", major, minor, rev);
     fprintf(stderr, "%s", glfwGetVersionString());
     cerr << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
     cerr << "GLSL version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << endl;
