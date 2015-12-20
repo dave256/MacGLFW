@@ -30,7 +30,7 @@ void GLFWDemo::setup()
     // black background
     glClearColor(0.0, 0.0, 0.0, 1.0);
 
-    // default draw as line loop
+    // default draw as filled triangles
     _drawType = GL_TRIANGLES;
 
     // set point size to 5 so easy to see
@@ -126,7 +126,7 @@ void GLFWDemo::render()
 
     // specify the actual vertex data from the buffer
     // first parameter is 0 because the layout value for vPosition in the vertex shader is 0
-    // second and third parameters are 2 because there are two values (x, y) per pixel that are floats
+    // second and third parameters are 2 and GL_FLOAT because there are two values (x, y) per pixel that are floats
     // fourth parameter is GL_FALSE since the values are not normalized
     // fifth parameter is the number of bytes (stride) to get to the next vertex
     //   it is 5 * sizeof(GLfloat) since there are 5 (x, y, r, g, b) float values per pixel
@@ -137,7 +137,7 @@ void GLFWDemo::render()
 
     // specify the actual vertex data from the buffer
     // first parameter is 1 because the layout value for vColor in the vertex shader is 1
-    // second and third parameters are 3 because there are three values (r, g, b) per pixel that are floats
+    // second and third parameters are 3 and GL_FLOAT because there are three values (r, g, b) per pixel that are floats
     // fourth parameter is GL_FALSE since the values are not normalized
     // fifth parameter is the number of bytes (stride) to get to the next vertex
     //   it is 5 * sizeof(GLfloat) since there are 5 (x, y, r, g, b) float values per pixel
