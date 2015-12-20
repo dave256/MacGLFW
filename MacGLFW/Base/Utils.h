@@ -25,5 +25,11 @@ std::string pathUsingEnvironmentVariable(std::string filePath, std::string envir
  */
 std::string contentsOfFile(std::string filePath);
 
+/*! returns new string with leading and trailing characters specified by whitespace parameter removed
+ * \param str - string that is to be trimmed
+ * \param whitespace - characters that you want to remove from beginning and end of str
+ */
+std::string trim(const std::string& str, const std::string& whitespace = " \t");
+
 
 #endif /* defined(__MacGLFW__Utils__) */
