@@ -18,7 +18,7 @@ public:
     GLFWDemo(GLFWwindow* window);
 
     // override the render method
-    void render();
+    virtual void render();
 
     // override the keyboard callback
     virtual void keyboardCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
