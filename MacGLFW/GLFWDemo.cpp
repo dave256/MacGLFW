@@ -92,13 +92,13 @@ void GLFWDemo::setup()
     // (cache data in graphics card memory)
     glGenBuffers(1, &_buffers[0]);
     glBindBuffer(GL_ARRAY_BUFFER, _buffers[0]);
-    glBufferData(GL_ARRAY_BUFFER, 15 * sizeof(GL_FLOAT), _poly0, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 15 * sizeof(GLfloat), _poly0, GL_STATIC_DRAW);
 
     // Create and initialize a buffer object
     // (cache data in graphics card memory)
     glGenBuffers(1, &_buffers[1]);
     glBindBuffer(GL_ARRAY_BUFFER, _buffers[1]);
-    glBufferData(GL_ARRAY_BUFFER, 15 * sizeof(GL_FLOAT), _poly1, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 15 * sizeof(GLfloat), _poly1, GL_STATIC_DRAW);
 
     // read and compile shaders
     string vshaderPath = "vshader.txt";
