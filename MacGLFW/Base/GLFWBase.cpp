@@ -34,6 +34,7 @@ GLFWBase::GLFWBase(GLFWwindow* window)
     glfwSetCursorEnterCallback(_window, GLFWBase::staticCursorEnterCallback);
     glfwSetMouseButtonCallback(_window, GLFWBase::staticMouseButtonCallback);
     glfwSetScrollCallback(_window, GLFWBase::staticScrollCallback);
+    glfwSetWindowSizeCallback(_window, GLFWBase::staticWindowSizeCallback);
 
     // Create a vertex array object since all programs need at least one
     glGenVertexArrays(1, &_vao);
@@ -124,6 +125,13 @@ void GLFWBase::scrollCallback(GLFWwindow* window, double xOffset, double yOffset
 
 //----------------------------------------------------------------------
 
+void GLFWBase::windowSizeCallback(GLFWwindow *window, int width, int height)
+{
+
+}
+
+//----------------------------------------------------------------------
+
 void GLFWBase::staticKeyboardCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     glBase->keyboardCallback(window, key, scancode, action, mods);
@@ -157,6 +165,13 @@ void GLFWBase::staticMouseButtonCallback(GLFWwindow* window, int button, int act
 void GLFWBase::staticScrollCallback(GLFWwindow* window, double xOffset, double yOffset)
 {
     glBase->scrollCallback(window, xOffset, yOffset);
+}
+
+//----------------------------------------------------------------------
+
+void GLFWBase::staticWindowSizeCallback(GLFWwindow *window, int width, int height)
+{
+    glBase->windowSizeCallback(window, width, height);
 }
 
 //----------------------------------------------------------------------
