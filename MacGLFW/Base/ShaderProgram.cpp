@@ -66,7 +66,7 @@ void ShaderProgram::makeProgramFromShaderStrings(std::string vertexShader, std::
 
 //----------------------------------------------------------------------
 
-void ShaderProgram::compileShader(std::string shaderCode, GLenum shaderType)
+void ShaderProgram::compileShader(std::string shaderCode, GLenum shaderType) const
 {
     GLuint shader = glCreateShader(shaderType);
 

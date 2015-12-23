@@ -31,13 +31,13 @@ public:
     void makeProgramFromShaderStrings(std::string vertexShader, std::string fragmentShader);
 
     // compile a shader; called by makeProgramFromShaderStrings
-    void compileShader(std::string shaderCode, GLenum shaderType);
+    void compileShader(std::string shaderCode, GLenum shaderType) const;
 
     // access the program identifier
-    GLuint program() { return _program; }
+    GLuint program() const { return _program; }
 
     // use this shader program
-    void useProgram() { glUseProgram(_program); }
+    void useProgram() const { glUseProgram(_program); }
 
 protected:
     GLuint _program;
