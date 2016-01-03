@@ -10,11 +10,6 @@
 #include <iostream>
 
 #include <GL/glew.h>
-
-#ifndef __APPLE__
-#include <GL/freeglut.h>
-#endif
-
 #include <GLFW/glfw3.h>
 
 #include "GLFWDemo.h"
