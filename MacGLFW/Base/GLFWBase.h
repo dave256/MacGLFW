@@ -58,8 +58,8 @@ public:
 
     /*! callbak when mouse/trackpad is scrolled
      * \param window the GLFW window
-     * \param xOffset position within the window (0 is top left corner of window
-     * \param yOffset position within the window (0 is top left corner of window
+     * \param xOffset position within the window (0 is top left corner of window)
+     * \param yOffset position within the window (0 is top left corner of window)
      */
     virtual void scrollCallback(GLFWwindow* window, double xOffset, double yOffset);
 
