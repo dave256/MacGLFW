@@ -13,6 +13,7 @@
 
 #ifndef __APPLE__
 #include <GL/glew.h>
+#include <GL/freeglut.h>
 #endif
 
 #include <GLFW/glfw3.h>
