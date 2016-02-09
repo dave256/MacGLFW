@@ -36,10 +36,10 @@ private:
     GLuint _buffers[2];
 
     // data for polygon 0
-    GLfloat _poly0[15];
+    GLfloat _points[8];
 
-    // data for polygon 1
-    GLfloat _poly1[15];
+    GLuint _indices[6];
+
 };
 
 #endif /* defined(__GLFWDemo__GLFWDemo__) */
