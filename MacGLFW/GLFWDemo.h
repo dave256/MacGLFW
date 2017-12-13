@@ -1,13 +1,13 @@
 //
-//  GLFWDemo.h
-//  
+//  GLFWDemo.hpp
+//  MacGLFW
 //
-//  Created by David M. Reed on 2/18/15.
-//  Copyright (c) 2015 David Reed. All rights reserved.
+//  Created by David M Reed on 12/12/17.
+//  Copyright © 2017 David M Reed. All rights reserved.
 //
 
-#ifndef __GLFWDemo__GLFWDemo__
-#define __GLFWDemo__GLFWDemo__
+#ifndef GLFWDemo_hpp
+#define GLFWDemo_hpp
 
 #include "ShaderProgram.h"
 #include "GLFWBase.h"
@@ -42,4 +42,4 @@ private:
     GLfloat _poly1[15];
 };
 
-#endif /* defined(__GLFWDemo__GLFWDemo__) */
+#endif /* GLFWDemo_hpp */

@@ -1,10 +1,11 @@
 //
 //  GLFWDemo.cpp
-//  
+//  MacGLFW
 //
-//  Created by David M. Reed on 2/18/15.
-//  Copyright (c) 2015 David Reed. All rights reserved.
+//  Created by David M Reed on 12/12/17.
+//  Copyright © 2017 David M Reed. All rights reserved.
 //
+
 
 #include <string>
 

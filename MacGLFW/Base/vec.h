@@ -382,7 +382,7 @@ struct vec4 {
     { x *= s;  y *= s;  z *= s;  w *= s;  return *this; }
 
     vec4& operator *= ( const vec4& v )
-    { x *= v.x, y *= v.y, z *= v.z, w *= v.w;  return *this; }
+    { x *= v.x; y *= v.y; z *= v.z; w *= v.w;  return *this; }
 
     vec4& operator /= ( const GLfloat s ) {
 #ifdef DEBUG
